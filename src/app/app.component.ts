@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularboot5';
+  activate=""
+  status: boolean = false;
+  clickEvent(){
+      this.status = !this.status;       
+  }
+  click(btn:any){
+  this.activate=btn
+  }
 }
